@@ -1,0 +1,6 @@
+@mixin vendore($prefixer, $prop, $val) {
+    @each $prefixes in $prefixer {
+        -#{$prefixes}-#{$prop}: $val
+    }
+    #{$prop}: $val
+}

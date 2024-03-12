@@ -1,0 +1,102 @@
+/* _____ style features _____ */
+.features-inner {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 100px;
+    @include vendore(webkit moz o, transition, 180ms linear);
+
+    span {
+        width: 80px;
+        height: 80px;
+        background-color: #4285f4;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include vendore(webkit, box-shadow, 0 4px 20px -5px rgba(66, 133, 244, 0.4));
+        @include vendore(webkit moz o, transition, 180ms linear);
+    }
+
+    .features-items {
+        padding-top: 40px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #8d8d8d;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-size: 17px;
+        }
+
+        a {
+            color: $main-color;
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+    }
+    &:hover {
+        background-color: $main-color;
+        color: #fff;
+        transform: translateY(-5px);
+        span {
+            background-color: #fff;
+        }
+        p {
+            color: rgba(#fff,0.7);
+            font-weight: 300;
+        }
+        a {
+            color: #fff;
+        }
+    }
+}
+
+/* _____ style about _____ */
+.features-details {
+    padding: 40px;
+    @media screen and (max-width: 992px) {
+        padding: 0;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    p {
+        line-height: 1.7;
+    }
+    .features-rect {
+        padding: 20px;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        border-left: 10px solid $main-color;
+        margin-top: 30px;
+        width: 100%;
+        @include vendore(webkit, box-shadow, 0 5px 15px -2px rgba(0, 0, 0, 0.1));
+        .features-caption {
+            margin-bottom: 30px;
+            display: inline-block;
+            margin-left: 20px;
+            line-height: 1.7;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/* _____ style header-nav _____ */
+#header-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+    @include vendore(webkit moz o, transition, 180ms linear);
+    background-color: #fff;
+    .fa-bars {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
+
+        a {
+            color: #000;
+
+            span {
+                color: $main-color;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            position: relative;
+
+            a {
+                color: #000;
+                padding: 15px 20px;
+                text-transform: capitalize;
+                @include vendore(webkit moz o, transition, 180ms linear);
+
+                >i.fa-chevron-down {
+                    font-size: 9px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 49%;
+                    right: 3px;
+                    transform: translateY(-49%);
+                }
+
+                &.active {
+                    color: $main-color;
+                }
+            }
+
+            &:hover>a {
+                color: $main-color;
+            }
+
+            &:hover>ul {
+                transform: translate(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        ul {
+            position: absolute;
+            width: 210px;
+            background-color: #fff;
+            flex-direction: column;
+            box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+            border-top: 2px solid $main-color;
+            transform: translateY(20px);
+            opacity: 0;
+            visibility: hidden;
+            @include vendore(webkit moz o, transition, 180ms linear);
+
+            li {
+                a {
+                    padding: 11px 20px;
+                    display: block;
+                    &>i.fa-chevron-down{
+                        right: 20px;
+                        transform: rotate(-90deg) translateX(50%);
+                    }
+                }
+                &:hover>a {
+                    background-color: #f4f5f9;
+                }
+            }
+
+            ul {
+                left: 100%;
+                top: 0;
+            }
+        }
+    }
+
+    &.sticky {
+        box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
+    }
+}
