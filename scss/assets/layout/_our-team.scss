@@ -1,1 +1,66 @@
-/* _____  _____ */
+/* _____ start style our-team _____ */
+.team-items {
+    margin-top: 20px;
+
+    .team-img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            @include vendore(webkit moz o, transition, .5s ease);
+        }
+
+        .team-bar {
+            background-color: $main-color;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -100%;
+            width: 100%;
+            z-index: 2;
+            @include vendore(webkit moz o, transition, .4s ease);
+
+            a {
+                text-align: center;
+                color: #fff;
+                margin-right: 15px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .team-details {
+        padding: 15px 0;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        span {
+            color: $main-color;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+    &:hover .team-bar {
+        bottom: 0;
+    }
+
+    &:hover .team-img img {
+        transform: scale(1.1);
+    }
+}

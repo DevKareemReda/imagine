@@ -1,16 +1,19 @@
-/* _____ style view-hero _____ */
+/* _____ start style view-hero _____ */
 .view-hero {
     min-height: calc(100vh - 83px);
     display: flex;
     justify-content: center;
     align-items: center;
+
     h2 {
         font-size: 56px;
         font-weight: 700;
+
         @media screen and (max-width: 992px) {
             font-size: 30px;
         }
     }
+
     p {
         color: #6c757d;
         font-weight: 300;

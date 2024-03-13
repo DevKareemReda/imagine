@@ -9,7 +9,6 @@
 }
 
 body {
-    height: 2000px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -18,6 +17,14 @@ body {
     color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    text-transform: $fontCapitalize;
+}
+
+
 ul {
     list-style-type: none;
 }
@@ -25,19 +32,12 @@ ul {
 a {
     text-decoration: none;
     display: inline-block;
+    text-transform: $fontCapitalize;
 }
 
 p {
     color: $body-color;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.img-fluid {
-    max-width: 100%;
-    vertical-align: middle;
+    line-height: $lineHeight;
 }
 
 img.lang {
@@ -48,27 +48,64 @@ img.lang {
     cursor: pointer;
 }
 
-.overlay-body {
-    position: fixed;
+input,
+textarea,
+button {
+    font-family: 'Nunito', sans-serif;
+}
+
+.overlay-body::before {
+    content: "";
     inset: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(#000, .6);
     z-index: 10;
-    opacity: 0;
-    visibility: hidden;
     @include vendore(webkit moz o, transition, 280ms linear);
+    position: fixed;
+    background-color: rgba(#000, .6);
+    visibility: hidden;
+    opacity: 0;
 }
 
-.overlay-body.active {
+.overlay-body.active::before {
     opacity: 1;
     visibility: visible;
 }
 
+
+.section {
+    padding: 120px 0;
+}
+
+.section-trigger {
+    padding: 70px 0;
+}
+
+.bg-gray {
+    background-color: #f6f6f6;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.img-fluid {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.text-white {
+    color: #fff;
+}
+
+
 .main-title {
     h2 {
         font-size: 40px;
-        text-transform: capitalize;
         margin-bottom: 15px;
 
         @media screen and (max-width: 991px) {
@@ -82,14 +119,31 @@ img.lang {
     }
 }
 
-.section {
-    padding: 120px 0;
-}
-
-.section-trigger {
-    padding: 50px 0;
-}
-
-.bg-gray {
-    background-color: #f6f6f6 ;
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #6696e3 0%, #02def7 100%);
+    line-height: 44px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px -2px rgba(0,0,0,.1);
+    border-radius: 25px;
+    z-index: 12;
+    opacity: 0;
+    visibility: hidden;
+    @include vendore(webkit ,box-shadow, 0 4px 20px -5px rgba(66, 133, 244, 0.4));
+    @include vendore(webkit moz o, transition, .3s linear);
+    &:hover {
+        bottom: 16px;
+        background-color: #fff;
+        @include vendore(webkit ,box-shadow, 0 5px 30px -5px rgba(66, 133, 244, 0.7));
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
 }

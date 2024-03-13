@@ -1,20 +1,23 @@
-/* _____ style about _____ */
+/* _____ start style about _____ */
 .about-details {
     padding: 30px;
+
     h3 {
         font-size: 28px;
-        text-transform: capitalize;
     }
+
     p {
         padding-top: 40px;
-        line-height: 1.7;
     }
 }
+
 .check {
     position: relative;
+
     li {
         margin-bottom: 20px;
         color: gray;
+
         i {
             margin-right: 15px;
             color: #8bc34a;

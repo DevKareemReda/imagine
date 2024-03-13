@@ -1,1 +1,24 @@
-/* _____  _____ */
+/* _____ start style blog-post _____ */
+.blog-detials {
+    padding: 15px 0;
+    h2 {
+        font-weight: 500;
+    }
+    .meta {
+        color: #b3b3b3;
+        font-size: 13px;
+    }
+
+    a {
+        color: $main-color;
+        @include vendore(webkit moz o, transition, .3s ease);
+
+        &:hover {
+            color: #0056b3;
+        }
+    }
+    p {
+        margin: 30px 0;
+        font-size: 15px;
+    }
+}
