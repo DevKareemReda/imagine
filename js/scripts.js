@@ -21,7 +21,7 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader)
 
-// add or remove classs active when click on links in navbar
+// add and remove classs active when click on links in navbar
 let allLinkTo = document.querySelectorAll("main ul li a.link-to");
 allLinkTo.forEach(el => {
     el.onclick = function (e) {
@@ -97,6 +97,7 @@ let goUp = document.querySelector(".up");
 window.onscroll = function () {
     goUp.classList.toggle('active', this.scrollY >= 550);
 }
+
 // scroll to top when click on arrow
 goUp.onclick = function () {
     scrollTo ({
@@ -130,6 +131,9 @@ if (darkMode === "dark") {
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addListener(e => e.matches ? addClassDarkMode() : removeClassDarkMode())
+
+let preloader = document.querySelector(".preloader");
+window.onload = () => setTimeout(() => preloader.classList.add("show"), 300);
 
 // change years dynamic in copy right in footer
 let copyRight = document.querySelector(".copy-right span");

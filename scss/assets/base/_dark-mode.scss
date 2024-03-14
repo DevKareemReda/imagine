@@ -1,6 +1,8 @@
 .dark-mode {
     background-color: #0d1117;
-
+    .preloader {
+        background-color: #000;
+    }
     #header-nav {
         border-bottom: 1px solid #2d3035;
         background-color: #0d1117;
@@ -13,15 +15,17 @@
             }
         }
         main {
-            background-color: #0d1117;
+            @media screen and (max-width: 992px) {
+                background-color: #0d1117;
+            }
         }
         ul {
-            background-color: #0d1117;
             li {
                 a {
                     color: #fff;
                 }
                 ul {
+                    background-color: #0d1117;
                     li {
                         a {
                             color: #fff;
