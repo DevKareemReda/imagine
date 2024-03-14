@@ -7,11 +7,13 @@
     z-index: 10;
     @include vendore(webkit moz o, transition, 180ms linear);
     background-color: #fff;
-    > .container {
+
+    >.container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .fa-bars {
         font-size: 20px;
         cursor: pointer;
@@ -70,6 +72,21 @@
             }
         }
 
+        .lnr {
+            cursor: pointer;
+            border-radius: 100px;
+            margin: 15px 20px;
+            font-size: 20px;
+        }
+
+        .lnr.lnr-moon {
+            color: $main-color;
+        }
+
+        .lnr.lnr-sun {
+            color: #ff851b;
+        }
+
         ul {
             position: absolute;
             width: 210px;
@@ -119,6 +136,7 @@
     .bars {
         display: block !important;
     }
+
     #header-nav {
         main {
             position: fixed;
@@ -131,9 +149,11 @@
             padding: 50px 20px;
             @include vendore(webkit moz o, transition, 280ms linear);
             @include vendore(webkit, box-shadow, -10px 0 20px -10px rgba(0, 0, 0, 0.1));
+
             &.active {
                 right: 0;
             }
+
             .mobile-site-close {
                 position: absolute;
                 right: 20px;
@@ -155,11 +175,12 @@
                 @include vendore(webkit, box-shadow, none);
 
                 li {
-                    &.active >ul {
-                        max-height: 236px;    
+                    &.active>ul {
+                        max-height: 236px;
                         opacity: 1;
                         visibility: visible;
                     }
+
                     &:hover>a {
                         background-color: transparent;
                     }
@@ -192,8 +213,13 @@
                     &.active>a>i.fa-chevron-down {
                         @include vendore(webkit moz ms o, transform, rotate(180deg));
                     }
+
                 }
 
+                .lnr {
+                    margin: 15px 0;
+                    text-align: left;
+                }
                 ul {
                     position: static;
                     top: 0;

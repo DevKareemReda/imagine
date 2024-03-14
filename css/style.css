@@ -11,6 +11,10 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  -webkit-transition: 180ms linear background-color;
+  -moz-transition: 180ms linear background-color;
+  -o-transition: 180ms linear background-color;
+  transition: 180ms linear background-color;
 }
 
 ::selection {
@@ -46,6 +50,10 @@ img.lang {
   border-radius: 100px;
   margin-top: 14px;
   cursor: pointer;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 input,
@@ -101,12 +109,13 @@ button {
 }
 
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .main-title h2 {
   font-size: 40px;
   margin-bottom: 15px;
+  color: #4285f4;
 }
 @media screen and (max-width: 991px) {
   .main-title h2 {
@@ -150,6 +159,56 @@ button {
 .up.active {
   opacity: 1;
   visibility: visible;
+}
+
+.dark-mode {
+  background-color: #0d1117;
+}
+.dark-mode #header-nav {
+  border-bottom: 1px solid #2d3035;
+  background-color: #0d1117;
+}
+.dark-mode #header-nav a.logo {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .dark-mode #header-nav .fa-bars {
+    color: #fff;
+  }
+}
+.dark-mode #header-nav main {
+  background-color: #0d1117;
+}
+.dark-mode #header-nav ul {
+  background-color: #0d1117;
+}
+.dark-mode #header-nav ul li a {
+  color: #fff;
+}
+.dark-mode #header-nav ul li ul li a {
+  color: #fff;
+}
+.dark-mode #header-nav ul li ul li:hover > a {
+  background-color: #2d3035;
+}
+.dark-mode p {
+  color: #e1e1e1;
+}
+.dark-mode .features-details,
+.dark-mode .team-details,
+.dark-mode .about-details,
+.dark-mode .head-name b,
+.dark-mode .blog-detials,
+.dark-mode .view-hero,
+.dark-mode .features-items {
+  color: #fff;
+}
+.dark-mode .bg-gray,
+.dark-mode .features-inner {
+  background-color: #000;
+}
+.dark-mode .features-inner {
+  border: 1px solid #eee;
 }
 
 .btn {
@@ -252,6 +311,18 @@ button {
     opacity: 1;
     visibility: visible;
   }
+}
+#header-nav ul .lnr {
+  cursor: pointer;
+  border-radius: 100px;
+  margin: 15px 20px;
+  font-size: 20px;
+}
+#header-nav ul .lnr.lnr-moon {
+  color: #4285f4;
+}
+#header-nav ul .lnr.lnr-sun {
+  color: #ff851b;
 }
 #header-nav ul ul {
   position: absolute;
@@ -396,6 +467,10 @@ button {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+  }
+  #header-nav main ul .lnr {
+    margin: 15px 0;
+    text-align: left;
   }
   #header-nav main ul ul {
     position: static;

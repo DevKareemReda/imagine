@@ -1,0 +1,63 @@
+.dark-mode {
+    background-color: #0d1117;
+
+    #header-nav {
+        border-bottom: 1px solid #2d3035;
+        background-color: #0d1117;
+        a.logo {
+            color: #fff;
+        }
+        .fa-bars {
+            @media screen and (max-width: 992px) {
+                color: #fff;
+            }
+        }
+        main {
+            background-color: #0d1117;
+        }
+        ul {
+            background-color: #0d1117;
+            li {
+                a {
+                    color: #fff;
+                }
+                ul {
+                    li {
+                        a {
+                            color: #fff;
+                        }
+                        &:hover > a{
+                            background-color: #2d3035;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    p {
+        color: #e1e1e1;
+    }
+
+    .features-details,
+    .team-details,
+    .about-details,
+    .head-name b,
+    .blog-detials,
+    .view-hero,
+    .features-items {
+        color: #fff;
+    }
+
+    .bg-gray,
+    .features-inner {
+        background-color: #000
+    }
+
+    .features-inner {
+        border: 1px solid #eee;
+    }
+}
+
+
