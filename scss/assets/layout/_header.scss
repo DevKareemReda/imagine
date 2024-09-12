@@ -1,247 +1,254 @@
 /* _____ style header-nav _____ */
 #header-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px 0;
-    z-index: 10;
-    @include vendore(webkit moz o, transition, 180ms linear);
-    background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+  @include vendore(webkit moz o, transition, 180ms linear);
+  background-color: #fff;
 
-    >.container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fa-bars {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: none;
+
+    a {
+      color: #000;
+
+      span {
+        color: $main-color;
+      }
     }
+  }
 
-    .fa-bars {
-        font-size: 20px;
-        cursor: pointer;
-    }
+  ul {
+    display: flex;
+    justify-content: flex-end;
 
-    h2 {
-        font-size: 32px;
-        font-weight: 400;
-        text-transform: none;
+    li {
+      position: relative;
 
-        a {
-            color: #000;
+      a {
+        color: #000;
+        padding: 15px 20px;
+        @include vendore(webkit moz o, transition, 180ms linear);
 
-            span {
-                color: $main-color;
-            }
+        > i.fa-chevron-down {
+          font-size: 9px;
+          display: inline-block;
+          position: absolute;
+          top: 49%;
+          right: 3px;
+          @include vendore(webkit moz ms o, transform, translateY(-49%));
         }
+
+        &.link-to.active {
+          color: $main-color;
+        }
+      }
+
+      &:hover > a {
+        color: $main-color;
+      }
+
+      &:hover > ul {
+        @media screen and (min-width: 992px) {
+          @include vendore(webkit moz ms o, transform, translateY(0));
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .lnr {
+      cursor: pointer;
+      border-radius: 100px;
+      margin: 15px 20px;
+      font-size: 20px;
+    }
+
+    .lnr.lnr-moon {
+      color: $main-color;
+    }
+
+    .lnr.lnr-sun {
+      color: #ff851b;
     }
 
     ul {
-        display: flex;
-        justify-content: flex-end;
+      position: absolute;
+      width: 210px;
+      background-color: #fff;
+      flex-direction: column;
 
-        li {
-            position: relative;
+      @include vendore(webkit, box-shadow, 0 2px 10px -2px rgba(0, 0, 0, 0.1));
+      border-top: 2px solid $main-color;
+      opacity: 0;
+      visibility: hidden;
+      @include vendore(webkit moz ms o, transform, translateY(20px));
+      @include vendore(webkit moz o, transition, 180ms linear);
 
-            a {
-                color: #000;
-                padding: 15px 20px;
-                @include vendore(webkit moz o, transition, 180ms linear);
+      li {
+        a {
+          padding: 11px 20px;
+          display: block;
 
-                >i.fa-chevron-down {
-                    font-size: 9px;
-                    display: inline-block;
-                    position: absolute;
-                    top: 49%;
-                    right: 3px;
-                    @include vendore(webkit moz ms o, transform, translateY(-49%));
-                }
-
-                &.link-to.active {
-                    color: $main-color;
-                }
-            }
-
-            &:hover>a {
-                color: $main-color;
-            }
-
-            &:hover>ul {
-                @media screen and (min-width: 992px) {
-                    @include vendore(webkit moz ms o, transform, translateY(0));
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
+          & > i.fa-chevron-down {
+            right: 20px;
+            @include vendore(
+              webkit moz ms o,
+              transform,
+              rotate(-90deg) translateX(50%)
+            );
+          }
         }
 
-        .lnr {
-            cursor: pointer;
-            border-radius: 100px;
-            margin: 15px 20px;
-            font-size: 20px;
+        &:hover > a {
+          background-color: #f4f5f9;
         }
+      }
 
-        .lnr.lnr-moon {
-            color: $main-color;
-        }
-
-        .lnr.lnr-sun {
-            color: #ff851b;
-        }
-
-        ul {
-            position: absolute;
-            width: 210px;
-            background-color: #fff;
-            flex-direction: column;
-
-            @include vendore(webkit, box-shadow, 0 2px 10px -2px rgba(0, 0, 0, 0.1));
-            border-top: 2px solid $main-color;
-            opacity: 0;
-            visibility: hidden;
-            @include vendore(webkit moz ms o, transform, translateY(20px));
-            @include vendore(webkit moz o, transition, 180ms linear);
-
-            li {
-                a {
-                    padding: 11px 20px;
-                    display: block;
-
-                    &>i.fa-chevron-down {
-                        right: 20px;
-                        @include vendore(webkit moz ms o, transform, rotate(-90deg) translateX(50%));
-                    }
-                }
-
-                &:hover>a {
-                    background-color: #f4f5f9;
-                }
-            }
-
-            ul {
-                left: 100%;
-                top: 0;
-            }
-        }
+      ul {
+        left: 100%;
+        top: 0;
+      }
     }
+  }
 
-    &.sticky {
-        @include vendore(webkit, box-shadow, 4px 0 20px -10px rgba(0, 0, 0, 0.2));
-    }
+  &.sticky {
+    @include vendore(webkit, box-shadow, 4px 0 20px -10px rgba(0, 0, 0, 0.2));
+  }
 }
 
 .bars {
-    display: none !important;
+  display: none !important;
 }
 
 @media screen and (max-width: 992px) {
-    .bars {
-        display: block !important;
-    }
+  .bars {
+    display: block !important;
+  }
 
-    #header-nav {
-        main {
-            position: fixed;
-            right: -300px;
-            width: 300px;
-            background-color: #fff;
-            top: 0;
-            height: 100%;
-            z-index: 11;
-            padding: 50px 20px;
-            @include vendore(webkit moz o, transition, 280ms linear);
-            @include vendore(webkit, box-shadow, -10px 0 20px -10px rgba(0, 0, 0, 0.1));
+  #header-nav {
+    main {
+      position: fixed;
+      right: -300px;
+      width: 300px;
+      background-color: #fff;
+      top: 0;
+      height: 100%;
+      z-index: 11;
+      padding: 50px 20px;
+      @include vendore(webkit moz o, transition, 280ms linear);
+      @include vendore(
+        webkit,
+        box-shadow,
+        -10px 0 20px -10px rgba(0, 0, 0, 0.1)
+      );
 
-            &.active {
-                right: 0;
-            }
+      &.active {
+        right: 0;
+      }
 
-            .mobile-site-close {
-                position: absolute;
-                right: 20px;
-                top: 5px;
-                cursor: pointer;
+      .mobile-site-close {
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        cursor: pointer;
 
-                span {
-                    font-size: 50px;
-                    color: #000 !important;
-                    opacity: 1;
-                }
-            }
-
-            ul {
-                flex-direction: column;
-                color: #212529;
-                width: 100%;
-                @include vendore(webkit moz o, transition, 280ms linear);
-                @include vendore(webkit, box-shadow, none);
-
-                li {
-                    &.active>ul {
-                        max-height: 236px;
-                        opacity: 1;
-                        visibility: visible;
-                    }
-
-                    &:hover>a {
-                        background-color: transparent;
-                    }
-
-                    a {
-                        display: block;
-                        color: #212529;
-                        padding: 8px 0;
-                        @include vendore(webkit moz o, transition, 280ms linear);
-                    }
-
-                    a>i.fa-chevron-down {
-                        font-size: 9px;
-                        display: inline-block;
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        width: 36px;
-                        height: 36px;
-                        border: 1px solid #f8f9fa;
-                        text-align: center;
-                        line-height: 36px;
-                        cursor: pointer;
-                        z-index: 31;
-                        @include vendore(webkit moz ms o, transform, rotate(0));
-                        @include vendore(webkit moz o, border-radius, 100px);
-                        @include vendore(webkit moz o, transition, 280ms linear);
-                    }
-
-                    &.active>a>i.fa-chevron-down {
-                        @include vendore(webkit moz ms o, transform, rotate(180deg));
-                    }
-
-                }
-
-                .lnr {
-                    margin: 15px 0;
-                    text-align: left;
-                }
-                ul {
-                    position: static;
-                    top: 0;
-                    border: 2px solid transparent;
-                    @include vendore(webkit moz ms o, transform, translateY(0));
-                    max-height: 0;
-                    overflow: hidden;
-
-                    li {
-                        a {
-                            padding: 8px 15px;
-                            font-size: 15px;
-                        }
-
-                        li {
-                            a {
-                                padding: 8px 30px;
-                            }
-                        }
-                    }
-                }
-            }
+        span {
+          font-size: 50px;
+          color: #000 !important;
+          opacity: 1;
         }
+      }
+
+      ul {
+        flex-direction: column;
+        color: #212529;
+        width: 100%;
+        @include vendore(webkit moz o, transition, 280ms linear);
+        @include vendore(webkit, box-shadow, none);
+
+        li {
+          &.active > ul {
+            max-height: 236px;
+            opacity: 1;
+            visibility: visible;
+          }
+
+          &:hover > a {
+            background-color: transparent;
+          }
+
+          a {
+            display: block;
+            color: #212529;
+            padding: 8px 0;
+            @include vendore(webkit moz o, transition, 280ms linear);
+          }
+
+          a > i.fa-chevron-down {
+            font-size: 9px;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            border: 1px solid #f8f9fa;
+            text-align: center;
+            line-height: 36px;
+            cursor: pointer;
+            z-index: 31;
+            @include vendore(webkit moz ms o, transform, rotate(0));
+            @include vendore(webkit moz o, border-radius, 100px);
+            @include vendore(webkit moz o, transition, 280ms linear);
+          }
+
+          &.active > a > i.fa-chevron-down {
+            @include vendore(webkit moz ms o, transform, rotate(180deg));
+          }
+        }
+
+        .lnr {
+          margin: 15px 0;
+          text-align: left;
+        }
+        ul {
+          position: static;
+          top: 0;
+          border: 2px solid transparent;
+          @include vendore(webkit moz ms o, transform, translateY(0));
+          max-height: 0;
+          overflow: hidden;
+
+          li {
+            a {
+              padding: 8px 15px;
+              font-size: 15px;
+            }
+
+            li {
+              a {
+                padding: 8px 30px;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

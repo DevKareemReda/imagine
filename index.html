@@ -1,683 +1,928 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>imagine</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
     <!-- Libraries files -->
-    <link rel="stylesheet" href="css/libs/all.min.css">
-    <link rel="stylesheet" href="css/libs/linearicon.min.css">
-    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/libs/all.min.css" />
+    <link rel="stylesheet" href="css/libs/linearicon.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css" />
 
     <!-- bootstrap ''grid'' files -->
-    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
+
+    <!-- (((( preloader )))) -->
+    <section class="preloader">
+      <div class="spinner"></div>
+    </section>
 
     <!-- _____ header _____ -->
     <header id="header-nav">
-        <div class="container">
-            <h2>
-                <a href="#" class="logo">imagine<span>.</span></a>
-            </h2>
-            <div class="col col-lg-1 ms-auto d-flex justify-content-end bars text-right">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="overlay-body">
-                <main>
-                    <div class="mobile-site-close d-lg-none d-block">
-                        <span>&times;</span>
-                    </div>
-                    <ul>
-                        <li><a href="#" data-scroll="home" class="link-to active">home</a></li>
-                        <li><a href="#" data-scroll="features" class="link-to">features</a></li>
-                        <li><a href="#" data-scroll="about" class="link-to">about us <i
-                                    class="fa-solid fa-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="#" class="active">drop down 1</a></li>
-                                <li><a href="#" class="link-to" data-scroll="team">our team</a></li>
-                                <li><a href="#">more Links <i class="fa-solid fa-chevron-down"></i></a>
-                                    <ul>
-                                        <li><a href="#">menu one</a></li>
-                                        <li><a href="#">menu two</a></li>
-                                        <li><a href="#">menu three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#" data-scroll="testmonials" class="link-to">testmonials</a></li>
-                        <li><a href="#" data-scroll="blog" class="link-to">blog</a></li>
-                        <li><a href="#" data-scroll="contactUs" class="link-to">contact</a></li>
-                        <span class="lnr lnr-moon"></span>
-                    </ul>
-                </main>
-            </div>
+      <div class="container">
+        <h2>
+          <a href="#" class="logo">imagine<span>.</span></a>
+        </h2>
+        <div
+          class="col col-lg-1 ms-auto d-flex justify-content-end bars text-right"
+        >
+          <i class="fa-solid fa-bars"></i>
         </div>
+        <div class="overlay-body">
+          <main>
+            <div class="mobile-site-close d-lg-none d-block">
+              <span>&times;</span>
+            </div>
+            <ul>
+              <li>
+                <a href="#" data-scroll="home" class="link-to active">home</a>
+              </li>
+              <li>
+                <a href="#" data-scroll="features" class="link-to">features</a>
+              </li>
+              <li>
+                <a href="#" data-scroll="about" class="link-to"
+                  >about us <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul>
+                  <li><a href="#" class="active">drop down 1</a></li>
+                  <li>
+                    <a href="#" class="link-to" data-scroll="team">our team</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >more Links <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul>
+                      <li><a href="#">menu one</a></li>
+                      <li><a href="#">menu two</a></li>
+                      <li><a href="#">menu three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" data-scroll="testmonials" class="link-to"
+                  >testmonials</a
+                >
+              </li>
+              <li><a href="#" data-scroll="blog" class="link-to">blog</a></li>
+              <li>
+                <a href="#" data-scroll="contactUs" class="link-to">contact</a>
+              </li>
+              <span class="lnr lnr-moon"></span>
+            </ul>
+          </main>
+        </div>
+      </div>
     </header>
     <!-- ./header -->
 
     <!-- _____ view-hero _____ -->
     <section class="block view-hero" id="home">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12 order-2 order-lg-1">
-                    <h2>Make Your Business More Profitable</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate
-                        facere deleniti fuga officia.</p>
-                    <a href="#" class="btn btn-primary">get started</a>
-                </div>
-                <div class="col-lg-6  col-12 order-1 order-lg-2">
-                    <img class="img-fluid" src="images/view-hero.png">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12 order-2 order-lg-1">
+            <h2>Make Your Business More Profitable</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam assumenda ea quo cupiditate facere deleniti fuga
+              officia.
+            </p>
+            <a href="#" class="btn btn-primary">get started</a>
+          </div>
+          <div class="col-lg-6 col-12 order-1 order-lg-2">
+            <img class="img-fluid" src="images/view-hero.png" />
+          </div>
         </div>
+      </div>
     </section>
     <!-- ./view-hero -->
 
     <!-- _____ features _____ -->
     <div class="block" id="features">
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 text-center mx-auto">
-                        <div class="main-title">
-                            <h2>imagine features</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam,
-                                id
-                                vero.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="features-inner">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" width="24" height="24" viewBox="0 0 24 24" data-tags="autorenew">
-                                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
-                                        <path
-                                            d="M800 330q54 82 54 182 0 140-101 241t-241 101v128l-170-172 170-170v128q106 0 181-75t75-181q0-60-30-120zM512 256q-106 0-181 75t-75 181q0 64 30 120l-62 62q-54-82-54-182 0-140 101-241t241-101v-128l170 172-170 170v-128z" />
-                                    </g>
-                                </svg></span>
-                            <div class="features-items">
-                                <h3>marketing consulting</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
-                                    vitae
-                                    eligendi at.</p>
-                                <a href="#" class="link">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="features-inner">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" width="24" height="24" viewBox="0 0 24 24"
-                                    data-tags="store_mall_directory,store">
-                                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
-                                        <path
-                                            d="M512 768v-170h-256v170h256zM896 598h-42v256h-86v-256h-170v256h-428v-256h-42v-86l42-214h684l42 214v86zM854 170v86h-684v-86h684z" />
-                                    </g>
-                                </svg></span>
-                            <div class="features-items">
-                                <h3>market analysis</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
-                                    vitae
-                                    eligendi at.</p>
-                                <a href="#" class="link">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="features-inner">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" width="24" height="24" viewBox="0 0 24 24"
-                                    data-tags="shopping_basket">
-                                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
-                                        <path
-                                            d="M512 726q34 0 60-26t26-60-26-60-60-26-60 26-26 60 26 60 60 26zM384 384h256l-128-188zM734 384h204q18 0 31 12t13 30q-20 80-60 225t-50 183q-18 62-82 62h-556q-64 0-82-62l-108-396q-2-4-2-12 0-18 13-30t31-12h204l186-280q12-18 36-18 26 0 36 18z" />
-                                    </g>
-                                </svg></span>
-                            <div class="features-items">
-                                <h3>easy purchase</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
-                                    vitae
-                                    eligendi at.</p>
-                                <a href="#" class="link">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="features-inner">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" width="24" height="24" viewBox="0 0 24 24"
-                                    data-tags="settings_backup_restore">
-                                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
-                                        <path
-                                            d="M512 128q160 0 272 112t112 272-112 272-272 112q-54 0-122-23t-112-57l60-60q76 54 174 54 124 0 211-87t87-211-87-211-211-87-211 87-87 211h128l-172 170-170-170h128q0-160 112-272t272-112zM598 512q0 34-26 60t-60 26-60-26-26-60 26-60 60-26 60 26 26 60z" />
-                                    </g>
-                                </svg></span>
-                            <div class="features-items">
-                                <h3>free updates</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
-                                    vitae
-                                    eligendi at.</p>
-                                <a href="#" class="link">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="features-inner">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" width="24" height="24" viewBox="0 0 24 24"
-                                    data-tags="sentiment_satisfied_alt">
-                                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
-                                        <path
-                                            d="M512 746q-74 0-133-41t-85-107h70q50 84 148 84t148-84h70q-26 66-85 107t-133 41zM512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM362 470q-26 0-45-19t-19-45 19-45 45-19 45 19 19 45-19 45-45 19zM662 470q-26 0-45-19t-19-45 19-45 45-19 45 19 19 45-19 45-45 19z" />
-                                    </g>
-                                </svg></span>
-                            <div class="features-items">
-                                <h3>100% satistified</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
-                                    vitae
-                                    eligendi at.</p>
-                                <a href="#" class="link">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 text-center">
-                        <div class="features-inner">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" width="24" height="24" viewBox="0 0 24 24" data-tags="power">
-                                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
-                                        <path class="hover"
-                                            d="M684 298q32 0 58 27t26 59v234l-150 150v128h-212v-128l-150-150v-234q0-32 26-59t58-27h2v-170h84v170h172v-170h84z" />
-                                    </g>
-                                </svg></span>
-                            <div class="features-items">
-                                <h3>easy plugin</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae
-                                    vitae
-                                    eligendi at.</p>
-                                <a href="#" class="link">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 text-center mx-auto">
+              <div class="main-title">
+                <h2>imagine features</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  quos quaerat sapiente nam, id vero.
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="section-trigger">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-12 my-5 my-lg-0">
-                        <img src="images/features_01.png" class="img-fluid" alt="features_01">
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="features-details">
-                            <h2>Communicate and gather feedback</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
-                                autem molestias corrupti officia veniam.</p>
-                            <div class="features-rect">
-                                <img src="images/person_4.jpg.webp" alt="person_4">
-                                <div class="features-caption">
-                                    <strong>Grey Simpson</strong> <br>
-                                    Co-Founder, XYZ Inc.
-                                </div>
-                                <p><i>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa
-                                        asperiores inventore aperiam iure?”
-                                    </i></p>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+              <div class="features-inner">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-tags="autorenew"
+                  >
+                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
+                      <path
+                        d="M800 330q54 82 54 182 0 140-101 241t-241 101v128l-170-172 170-170v128q106 0 181-75t75-181q0-60-30-120zM512 256q-106 0-181 75t-75 181q0 64 30 120l-62 62q-54-82-54-182 0-140 101-241t241-101v-128l170 172-170 170v-128z"
+                      />
+                    </g></svg
+                ></span>
+                <div class="features-items">
+                  <h3>marketing consulting</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quis molestiae vitae eligendi at.
+                  </p>
+                  <a href="#" class="link">learn more</a>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section-trigger">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2 col-12 my-5 my-lg-0">
-                        <img src="images/features_02.png" class="img-fluid" alt="features_02">
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="features-details">
-                            <h2>Communicate and gather feedback</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
-                                autem molestias corrupti officia veniam.</p>
-                            <div class="features-rect">
-                                <img src="images/person_1.jpg.webp" alt="person_1">
-                                <div class="features-caption">
-                                    <strong>Kimberly Gush</strong> <br>
-                                    Co-Founder, XYZ Inc.
-                                </div>
-                                <p><i>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa
-                                        asperiores inventore aperiam iure?”
-                                    </i></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+              <div class="features-inner">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-tags="store_mall_directory,store"
+                  >
+                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
+                      <path
+                        d="M512 768v-170h-256v170h256zM896 598h-42v256h-86v-256h-170v256h-428v-256h-42v-86l42-214h684l42 214v86zM854 170v86h-684v-86h684z"
+                      />
+                    </g></svg
+                ></span>
+                <div class="features-items">
+                  <h3>market analysis</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quis molestiae vitae eligendi at.
+                  </p>
+                  <a href="#" class="link">learn more</a>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section-trigger">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-12 my-5 my-lg-0">
-                        <img src="images/features_01.png" class="img-fluid" alt="features_01">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="features-details">
-                            <h2>Communicate and gather feedback</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
-                                autem molestias corrupti officia veniam.</p>
-                            <div class="features-rect">
-                                <img src="images/person_4.jpg.webp" alt="person_4">
-                                <div class="features-caption">
-                                    <strong>Grey Simpson</strong> <br>
-                                    Co-Founder, XYZ Inc.
-                                </div>
-                                <p><i>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa
-                                        asperiores inventore aperiam iure?”
-                                    </i></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+              <div class="features-inner">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-tags="shopping_basket"
+                  >
+                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
+                      <path
+                        d="M512 726q34 0 60-26t26-60-26-60-60-26-60 26-26 60 26 60 60 26zM384 384h256l-128-188zM734 384h204q18 0 31 12t13 30q-20 80-60 225t-50 183q-18 62-82 62h-556q-64 0-82-62l-108-396q-2-4-2-12 0-18 13-30t31-12h204l186-280q12-18 36-18 26 0 36 18z"
+                      />
+                    </g></svg
+                ></span>
+                <div class="features-items">
+                  <h3>easy purchase</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quis molestiae vitae eligendi at.
+                  </p>
+                  <a href="#" class="link">learn more</a>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="section-trigger">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-2  col-12 my-5 my-lg-0">
-                        <img src="images/features_02.png" class="img-fluid" alt="features_02">
-                    </div>
-                    <div class="col-lg-6 order-1">
-                        <div class="features-details">
-                            <h2>Communicate and gather feedback</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto
-                                autem molestias corrupti officia veniam.</p>
-                            <div class="features-rect">
-                                <img src="images/person_1.jpg.webp" alt="person_1">
-                                <div class="features-caption">
-                                    <strong>Kimberly Gush</strong> <br>
-                                    Co-Founder, XYZ Inc.
-                                </div>
-                                <p><i>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa
-                                        asperiores inventore aperiam iure?”
-                                    </i></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+              <div class="features-inner">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-tags="settings_backup_restore"
+                  >
+                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
+                      <path
+                        d="M512 128q160 0 272 112t112 272-112 272-272 112q-54 0-122-23t-112-57l60-60q76 54 174 54 124 0 211-87t87-211-87-211-211-87-211 87-87 211h128l-172 170-170-170h128q0-160 112-272t272-112zM598 512q0 34-26 60t-60 26-60-26-26-60 26-60 60-26 60 26 26 60z"
+                      />
+                    </g></svg
+                ></span>
+                <div class="features-items">
+                  <h3>free updates</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quis molestiae vitae eligendi at.
+                  </p>
+                  <a href="#" class="link">learn more</a>
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+              <div class="features-inner">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-tags="sentiment_satisfied_alt"
+                  >
+                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
+                      <path
+                        d="M512 746q-74 0-133-41t-85-107h70q50 84 148 84t148-84h70q-26 66-85 107t-133 41zM512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM362 470q-26 0-45-19t-19-45 19-45 45-19 45 19 19 45-19 45-45 19zM662 470q-26 0-45-19t-19-45 19-45 45-19 45 19 19 45-19 45-45 19z"
+                      />
+                    </g></svg
+                ></span>
+                <div class="features-items">
+                  <h3>100% satistified</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quis molestiae vitae eligendi at.
+                  </p>
+                  <a href="#" class="link">learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-center">
+              <div class="features-inner">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    data-tags="power"
+                  >
+                    <g fill="#fff" transform="scale(0.0234375 0.0234375)">
+                      <path
+                        class="hover"
+                        d="M684 298q32 0 58 27t26 59v234l-150 150v128h-212v-128l-150-150v-234q0-32 26-59t58-27h2v-170h84v170h172v-170h84z"
+                      />
+                    </g></svg
+                ></span>
+                <div class="features-items">
+                  <h3>easy plugin</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis quis molestiae vitae eligendi at.
+                  </p>
+                  <a href="#" class="link">learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-trigger">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12 my-5 my-lg-0">
+              <img
+                src="images/features_01.png"
+                class="img-fluid"
+                alt="features_01"
+              />
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="features-details">
+                <h2>Communicate and gather feedback</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem neque nisi architecto autem molestias corrupti
+                  officia veniam.
+                </p>
+                <div class="features-rect">
+                  <img src="images/person_4.jpg.webp" alt="person_4" />
+                  <div class="features-caption">
+                    <strong>Grey Simpson</strong> <br />
+                    Co-Founder, XYZ Inc.
+                  </div>
+                  <p>
+                    <i
+                      >“Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Ducimus vitae ipsa asperiores inventore aperiam
+                      iure?”
+                    </i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-trigger">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 col-12 my-5 my-lg-0">
+              <img
+                src="images/features_02.png"
+                class="img-fluid"
+                alt="features_02"
+              />
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="features-details">
+                <h2>Communicate and gather feedback</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem neque nisi architecto autem molestias corrupti
+                  officia veniam.
+                </p>
+                <div class="features-rect">
+                  <img src="images/person_1.jpg.webp" alt="person_1" />
+                  <div class="features-caption">
+                    <strong>Kimberly Gush</strong> <br />
+                    Co-Founder, XYZ Inc.
+                  </div>
+                  <p>
+                    <i
+                      >“Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Ducimus vitae ipsa asperiores inventore aperiam
+                      iure?”
+                    </i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-trigger">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12 my-5 my-lg-0">
+              <img
+                src="images/features_01.png"
+                class="img-fluid"
+                alt="features_01"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="features-details">
+                <h2>Communicate and gather feedback</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem neque nisi architecto autem molestias corrupti
+                  officia veniam.
+                </p>
+                <div class="features-rect">
+                  <img src="images/person_4.jpg.webp" alt="person_4" />
+                  <div class="features-caption">
+                    <strong>Grey Simpson</strong> <br />
+                    Co-Founder, XYZ Inc.
+                  </div>
+                  <p>
+                    <i
+                      >“Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Ducimus vitae ipsa asperiores inventore aperiam
+                      iure?”
+                    </i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-trigger">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-2 col-12 my-5 my-lg-0">
+              <img
+                src="images/features_02.png"
+                class="img-fluid"
+                alt="features_02"
+              />
+            </div>
+            <div class="col-lg-6 order-1">
+              <div class="features-details">
+                <h2>Communicate and gather feedback</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem neque nisi architecto autem molestias corrupti
+                  officia veniam.
+                </p>
+                <div class="features-rect">
+                  <img src="images/person_1.jpg.webp" alt="person_1" />
+                  <div class="features-caption">
+                    <strong>Kimberly Gush</strong> <br />
+                    Co-Founder, XYZ Inc.
+                  </div>
+                  <p>
+                    <i
+                      >“Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Ducimus vitae ipsa asperiores inventore aperiam
+                      iure?”
+                    </i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- ./features -->
 
     <!-- _____ about-us _____ -->
     <section class="block section-trigger bg-gray" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 text-center mx-auto">
-                    <div class="main-title mb-5">
-                        <h2>about us</h2>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/about.png" class="img-fluid" alt="about">
-                </div>
-                <div class="col-lg-5 ms-auto">
-                    <div class="about-details">
-                        <h3>our mission</h3>
-                        <p>Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis
-                            consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam
-                            unde, aperiam delectus! At maiores, itaque.</p>
-                        <ul class="check mt-5">
-                            <li><i class="fa-solid fa-check"></i> Laborum enim quasi at modi</li>
-                            <li><i class="fa-solid fa-check"></i> Ad at tempore</li>
-                            <li><i class="fa-solid fa-check"></i> Labore quaerat esse</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary mt-4">learn more</a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto">
+            <div class="main-title mb-5">
+              <h2>about us</h2>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/about.png" class="img-fluid" alt="about" />
+          </div>
+          <div class="col-lg-5 ms-auto">
+            <div class="about-details">
+              <h3>our mission</h3>
+              <p>
+                Eos cumque optio dolores excepturi rerum temporibus magni
+                recusandae eveniet, totam omnis consectetur maxime quibusdam
+                expedita dolorem dolor nobis dicta labore quaerat esse magnam
+                unde, aperiam delectus! At maiores, itaque.
+              </p>
+              <ul class="check mt-5">
+                <li>
+                  <i class="fa-solid fa-check"></i> Laborum enim quasi at modi
+                </li>
+                <li><i class="fa-solid fa-check"></i> Ad at tempore</li>
+                <li><i class="fa-solid fa-check"></i> Labore quaerat esse</li>
+              </ul>
+              <a href="#" class="btn btn-primary mt-4">learn more</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ./about-us -->
 
     <!-- _____ our-team _____ -->
     <section class="section-trigger" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 text-center mx-auto">
-                    <div class="main-title">
-                        <h2>our team</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quos quaerat sapiente nam, id
-                            vero.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto">
+            <div class="main-title">
+              <h2>our team</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                quos quaerat sapiente nam, id vero.
+              </p>
             </div>
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-items">
-                        <div class="team-img">
-                            <img src="images/person_1.jpg.webp" class="img-fluid" alt="person_1">
-                            <div class="team-bar">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-details">
-                            <h3>cloe marena</h3>
-                            <span>president</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis
-                                qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-items">
-                        <div class="team-img">
-                            <img src="images/person_2.jpg.webp" class="img-fluid" alt="person_2">
-                            <div class="team-bar">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-details">
-                            <h3>john rooster</h3>
-                            <span>marketing</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis
-                                qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-items">
-                        <div class="team-img">
-                            <img src="images/person_3.jpg.webp" class="img-fluid" alt="person_3">
-                            <div class="team-bar">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-details">
-                            <h3>will turner</h3>
-                            <span>marketing</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis
-                                qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-items">
-                        <div class="team-img">
-                            <img src="images/person_4.jpg.webp" class="img-fluid" alt="person_4">
-                            <div class="team-bar">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-details">
-                            <h3>nicolas stainer</h3>
-                            <span>financing</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis
-                                qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-items">
-                        <div class="team-img">
-                            <img src="images/person_5.jpg.webp" class="img-fluid" alt="person_5">
-                            <div class="team-bar">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-details">
-                            <h3>george brook</h3>
-                            <span>founder</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis
-                                qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-items">
-                        <div class="team-img">
-                            <img src="images/person_6.jpg.webp" class="img-fluid" alt="person_6">
-                            <div class="team-bar">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="team-details">
-                            <h3>emely hopson</h3>
-                            <span>marketing</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis
-                                qui doloribus perspiciatis ipsa modi accusantium repellat.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="team-items">
+              <div class="team-img">
+                <img
+                  src="images/person_1.jpg.webp"
+                  class="img-fluid"
+                  alt="person_1"
+                />
+                <div class="team-bar">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-details">
+                <h3>cloe marena</h3>
+                <span>president</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatum excepturi corporis qui doloribus perspiciatis ipsa
+                  modi accusantium repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-items">
+              <div class="team-img">
+                <img
+                  src="images/person_2.jpg.webp"
+                  class="img-fluid"
+                  alt="person_2"
+                />
+                <div class="team-bar">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-details">
+                <h3>john rooster</h3>
+                <span>marketing</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatum excepturi corporis qui doloribus perspiciatis ipsa
+                  modi accusantium repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-items">
+              <div class="team-img">
+                <img
+                  src="images/person_3.jpg.webp"
+                  class="img-fluid"
+                  alt="person_3"
+                />
+                <div class="team-bar">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-details">
+                <h3>will turner</h3>
+                <span>marketing</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatum excepturi corporis qui doloribus perspiciatis ipsa
+                  modi accusantium repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-items">
+              <div class="team-img">
+                <img
+                  src="images/person_4.jpg.webp"
+                  class="img-fluid"
+                  alt="person_4"
+                />
+                <div class="team-bar">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-details">
+                <h3>nicolas stainer</h3>
+                <span>financing</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatum excepturi corporis qui doloribus perspiciatis ipsa
+                  modi accusantium repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-items">
+              <div class="team-img">
+                <img
+                  src="images/person_5.jpg.webp"
+                  class="img-fluid"
+                  alt="person_5"
+                />
+                <div class="team-bar">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-details">
+                <h3>george brook</h3>
+                <span>founder</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatum excepturi corporis qui doloribus perspiciatis ipsa
+                  modi accusantium repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-items">
+              <div class="team-img">
+                <img
+                  src="images/person_6.jpg.webp"
+                  class="img-fluid"
+                  alt="person_6"
+                />
+                <div class="team-bar">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-details">
+                <h3>emely hopson</h3>
+                <span>marketing</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatum excepturi corporis qui doloribus perspiciatis ipsa
+                  modi accusantium repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ./our-team -->
 
     <!-- _____ testmonials _____ -->
     <section class="block section-trigger bg-gray" id="testmonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 text-center mx-auto">
-                    <div class="main-title">
-                        <h2>testimonials</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto">
+            <div class="main-title">
+              <h2>testimonials</h2>
             </div>
+          </div>
         </div>
-        <div class="owl-carousel owl-testmonials owl-theme">
-            <div class="testmonials-items my-5">
-                <img src="images/person_1.jpg.webp" alt="person_1">
-                <div class="testmonials-details">
-                    <p class="caption"><i>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                            reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                            illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</i>
-                    </p>
-                    <p class="head-name"><b>Kyle McDonald</b></p>
-                </div>
-            </div>
-            <div class="testmonials-items my-5">
-                <img src="images/person_2.jpg.webp" alt="person_2">
-                <div class="testmonials-details">
-                    <p class="caption"><i>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                            reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                            illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</i>
-                    </p>
-                    <p class="head-name"><b>Robert Aguilar</b></p>
-                </div>
-            </div>
-            <div class="testmonials-items my-5">
-                <img src="images/person_3.jpg.webp" alt="person_3">
-                <div class="testmonials-details">
-                    <p class="caption"><i>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                            reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                            illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</i>
-                    </p>
-                    <p class="head-name"><b>John Smith</b></p>
-                </div>
-            </div>
-            <div class="testmonials-items my-5">
-                <img src="images/person_4.jpg.webp" alt="person_4">
-                <div class="testmonials-details">
-                    <p class="caption"><i>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde
-                            reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae
-                            illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</i>
-                    </p>
-                    <p class="head-name"><b>Roger Spears</b></p>
-                </div>
-            </div>
+      </div>
+      <div class="owl-carousel owl-testmonials owl-theme">
+        <div class="testmonials-items my-5">
+          <img src="images/person_1.jpg.webp" alt="person_1" />
+          <div class="testmonials-details">
+            <p class="caption">
+              <i
+                >“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur unde reprehenderit aperiam quaerat fugiat
+                repudiandae explicabo animi minima fuga beatae illum eligendi
+                incidunt consequatur. Amet dolores excepturi earum unde
+                iusto.”</i
+              >
+            </p>
+            <p class="head-name"><b>Kyle McDonald</b></p>
+          </div>
         </div>
+        <div class="testmonials-items my-5">
+          <img src="images/person_2.jpg.webp" alt="person_2" />
+          <div class="testmonials-details">
+            <p class="caption">
+              <i
+                >“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur unde reprehenderit aperiam quaerat fugiat
+                repudiandae explicabo animi minima fuga beatae illum eligendi
+                incidunt consequatur. Amet dolores excepturi earum unde
+                iusto.”</i
+              >
+            </p>
+            <p class="head-name"><b>Robert Aguilar</b></p>
+          </div>
+        </div>
+        <div class="testmonials-items my-5">
+          <img src="images/person_3.jpg.webp" alt="person_3" />
+          <div class="testmonials-details">
+            <p class="caption">
+              <i
+                >“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur unde reprehenderit aperiam quaerat fugiat
+                repudiandae explicabo animi minima fuga beatae illum eligendi
+                incidunt consequatur. Amet dolores excepturi earum unde
+                iusto.”</i
+              >
+            </p>
+            <p class="head-name"><b>John Smith</b></p>
+          </div>
+        </div>
+        <div class="testmonials-items my-5">
+          <img src="images/person_4.jpg.webp" alt="person_4" />
+          <div class="testmonials-details">
+            <p class="caption">
+              <i
+                >“Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur unde reprehenderit aperiam quaerat fugiat
+                repudiandae explicabo animi minima fuga beatae illum eligendi
+                incidunt consequatur. Amet dolores excepturi earum unde
+                iusto.”</i
+              >
+            </p>
+            <p class="head-name"><b>Roger Spears</b></p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ./testmonials -->
 
     <!-- _____ blog-post _____ -->
     <section class="block section-trigger" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 text-center mx-auto">
-                    <div class="main-title">
-                        <h2>blog posts</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto">
+            <div class="main-title">
+              <h2>blog posts</h2>
             </div>
-            <div class="row mt-4">
-                <div class="col-lg-4 col-md-6">
-                    <img src="images/img_1.jpg.webp" class="img-fluid" alt="img_1">
-                    <div class="blog-detials">
-                        <h2>make your business more profitable</h2>
-                        <div class="meta mt-2">
-                            Ham Brook
-                            <span class="mx-2">•</span>
-                            Jan 18, 2019
-                            <span class="mx-2">•</span>
-                            <a href="#">News</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
-                            sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                        <a href="#">continue reading ...</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <img src="images/img_2.jpg.webp" class="img-fluid" alt="img_2">
-                    <div class="blog-detials">
-                        <h2>make your business more profitable</h2>
-                        <div class="meta mt-2">
-                            James Phelps
-                            <span class="mx-2">•</span>
-                            Jan 18, 2019
-                            <span class="mx-2">•</span>
-                            <a href="#">News</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
-                            sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                        <a href="#">continue reading ...</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <img src="images/img_2.jpg.webp" class="img-fluid" alt="img_2">
-                    <div class="blog-detials">
-                        <h2>make your business more profitable</h2>
-                        <div class="meta mt-2">
-                            James Phelps
-                            <span class="mx-2">•</span>
-                            Jan 18, 2019
-                            <span class="mx-2">•</span>
-                            <a href="#">News</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores
-                            sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                        <a href="#">continue reading ...</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-6">
+            <img src="images/img_1.jpg.webp" class="img-fluid" alt="img_1" />
+            <div class="blog-detials">
+              <h2>make your business more profitable</h2>
+              <div class="meta mt-2">
+                Ham Brook
+                <span class="mx-2">•</span>
+                Jan 18, 2019
+                <span class="mx-2">•</span>
+                <a href="#">News</a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+              <a href="#">continue reading ...</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <img src="images/img_2.jpg.webp" class="img-fluid" alt="img_2" />
+            <div class="blog-detials">
+              <h2>make your business more profitable</h2>
+              <div class="meta mt-2">
+                James Phelps
+                <span class="mx-2">•</span>
+                Jan 18, 2019
+                <span class="mx-2">•</span>
+                <a href="#">News</a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+              <a href="#">continue reading ...</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <img src="images/img_2.jpg.webp" class="img-fluid" alt="img_2" />
+            <div class="blog-detials">
+              <h2>make your business more profitable</h2>
+              <div class="meta mt-2">
+                James Phelps
+                <span class="mx-2">•</span>
+                Jan 18, 2019
+                <span class="mx-2">•</span>
+                <a href="#">News</a>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                eligendi nobis ea maiores sapiente veritatis reprehenderit
+                suscipit quaerat rerum voluptatibus a eius.
+              </p>
+              <a href="#">continue reading ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ./blog-post -->
 
     <!-- _____ contact _____ -->
     <section class="block contact section-trigger" id="contactUs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 text-center mx-auto  mb-4">
-                    <div class="main-title ">
-                        <h2 class="text-white">contact us</h2>
-                    </div>
-                </div>
-                <div class="col-lg-7 mx-auto">
-                    <div class="contact-inner p-5">
-                        <h2 class="mb-5">contact form</h2>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label for="first" class="d-block">first name</label>
-                                    <input type="text" name="first-name" id="first" required="required">
-                                </div>
-                                <div class="col-lg-6 mt-3 mt-lg-0">
-                                    <label for="last" class="d-block">last name</label>
-                                    <input type="text" name="last-name" id="last" required="required">
-                                </div>
-                                <div class="col-lg-12 mt-3">
-                                    <label for="email" class="d-block">email</label>
-                                    <input type="email" name="email" id="email" required="required">
-                                </div>
-                                <div class="col-lg-12 mt-3">
-                                    <label for="subj" class="d-block">subject</label>
-                                    <input type="text" name="subject" id="subj" required="required">
-                                </div>
-                                <div class="col-lg-12 mt-3">
-                                    <label for="msg" class="d-block">message</label>
-                                    <textarea type="text" name="message" id="msg"
-                                        placeholder="Leave your message here..." required="required"></textarea>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-primary mt-2">send message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-center mx-auto mb-4">
+            <div class="main-title">
+              <h2 class="text-white">contact us</h2>
             </div>
+          </div>
+          <div class="col-lg-7 mx-auto">
+            <div class="contact-inner p-5">
+              <h2 class="mb-5">contact form</h2>
+              <form action="#">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <label for="first" class="d-block">first name</label>
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first"
+                      required="required"
+                    />
+                  </div>
+                  <div class="col-lg-6 mt-3 mt-lg-0">
+                    <label for="last" class="d-block">last name</label>
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last"
+                      required="required"
+                    />
+                  </div>
+                  <div class="col-lg-12 mt-3">
+                    <label for="email" class="d-block">email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      required="required"
+                    />
+                  </div>
+                  <div class="col-lg-12 mt-3">
+                    <label for="subj" class="d-block">subject</label>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subj"
+                      required="required"
+                    />
+                  </div>
+                  <div class="col-lg-12 mt-3">
+                    <label for="msg" class="d-block">message</label>
+                    <textarea
+                      type="text"
+                      name="message"
+                      id="msg"
+                      placeholder="Leave your message here..."
+                      required="required"
+                    ></textarea>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="btn btn-primary mt-2">
+                      send message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ./contact -->
 
     <!-- _____ footer _____ -->
     <footer class="section-trigger">
-        <div class="container">
-            <div class="row align-items-center  text-center">
-                <div class="col-lg-12">
-                    <div class="social">
-                        <a href="https://github.com/DevKareemReda/imagine"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://github.com/DevKareemReda/imagine"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://github.com/DevKareemReda/imagine"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/DevKareemReda/imagine"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/DevKareemReda/imagine"><i class="fa-brands fa-pinterest"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-12 mt-5">
-                    <p class="copy-right">Copyright &copy; <span></span> All rights reserved | This template is made
-                        with
-                        by <a href="https://github.com/DevKareemReda/imagine" target="_blank"
-                            style="display: inline-block;" title="Kareem Reda">Kareem R. Elkassas</a></p>
-                </div>
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <div class="col-lg-12">
+            <div class="social">
+              <a href="https://github.com/DevKareemReda/imagine"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://github.com/DevKareemReda/imagine"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://github.com/DevKareemReda/imagine"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/DevKareemReda/imagine"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/DevKareemReda/imagine"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
             </div>
+          </div>
+          <div class="col-lg-12 mt-5">
+            <p class="copy-right">
+              Copyright &copy; <span></span> All rights reserved | This template
+              is made with by
+              <a
+                href="https://github.com/DevKareemReda/imagine"
+                target="_blank"
+                style="display: inline-block"
+                title="Kareem Reda"
+                >Kareem R. Elkassas</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- ./footer -->
 
-    <!-- (((( preloader )))) -->
-    <section class="preloader">
-        <div class="spinner"></div>
-    </section>
-
     <!-- _____ up _____ -->
     <div class="up">
-        <span class=" lnr lnr-chevron-up"></span>
-	</div>
+      <span class="lnr lnr-chevron-up"></span>
+    </div>
 
     <!-- Libraries files -->
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -685,7 +930,5 @@
 
     <!-- Main Js file -->
     <script src="js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>
